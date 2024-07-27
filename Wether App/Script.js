@@ -1,6 +1,5 @@
-import {apiKey, apiUrl} from "./api";
+import { apiKey, apiUrl } from "./api.js";
 
-console.log(apiKey);
 const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
@@ -41,5 +40,6 @@ async function checkWether(city) {
 }
 
 searchBtn.addEventListener("click", () => {
+  debugger;
   checkWether(searchBox.value);
 });
