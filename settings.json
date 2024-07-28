@@ -1,0 +1,30 @@
+{
+    "editor.fontLigatures": true,
+    "workbench.colorTheme": "Learn with Sumit - Shades of Grey",
+    "workbench.colorCustomizations": {
+        "editor.background": "#000000",
+        "editor.selectionBackground": "#06383d"
+    },
+    "explorer.confirmDelete": false,
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "editor.fontFamily": "'Fira Code','Cascadia Code',Consolas, 'Courier New', monospace",
+    "git.confirmSync": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.fontSize": 16,
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "liveServer.settings.donotShowInfoMsg": true
+}
