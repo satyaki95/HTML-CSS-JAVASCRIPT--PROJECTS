@@ -26,6 +26,5 @@
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "liveServer.settings.donotShowInfoMsg": true
-    
+    "liveServer.settings.donotShowInfoMsg": true 
 }
