@@ -13,7 +13,6 @@ async function checkWether(city) {
     document.querySelector(".error").style.display = "none";
     document.querySelector(".weather").style.display = "block";
     var data = await response.json();
-    console.log(data);
 
     document.querySelector(".city").innerHTML = data.name;
     document.querySelector(".temp").innerHTML =
@@ -40,6 +39,5 @@ async function checkWether(city) {
 }
 
 searchBtn.addEventListener("click", () => {
-  debugger;
   checkWether(searchBox.value);
 });
