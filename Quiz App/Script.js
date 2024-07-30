@@ -1,5 +1,7 @@
-import {questions} from "./data.js";
+// Import quiz data from data.js file
+import { questions } from "./data.js";
 
+// Initialize quiz state variables
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
@@ -7,6 +9,7 @@ const nextButton = document.getElementById("next-btn");
 let currentQuestionIndex = 0;
 let score = 0;
 
+// Initialize quiz state and display first question
 const startQuiz = () => {
   currentQuestionIndex = 0;
   score = 0;
@@ -14,6 +17,7 @@ const startQuiz = () => {
   showQuestion();
 };
 
+// Display current question and answers
 const showQuestion = () => {
   resetState();
   let currentQuestion = questions[currentQuestionIndex];
@@ -32,6 +36,7 @@ const showQuestion = () => {
   });
 };
 
+// Reset quiz state and remove previous question's answers
 const resetState = () => {
   nextButton.style.display = "none";
   while (answerButtons.firstChild) {
@@ -39,6 +44,7 @@ const resetState = () => {
   }
 };
 
+// Handle user input and update score
 const selectAnswer = (e) => {
   const selectedBtn = e.target;
   const isCorrect = selectedBtn.dataset.correct === "true";
@@ -57,6 +63,7 @@ const selectAnswer = (e) => {
   nextButton.style.display = "block";
 };
 
+// Display final score
 const showScore = () => {
   resetState();
   questionElement.innerHTML = `You Scored ${score} out of ${questions.length}!`;
@@ -64,6 +71,7 @@ const showScore = () => {
   nextButton.style.display = "block";
 };
 
+// Handle next button click and navigate to next question or show score
 const handleNextButton = () => {
   currentQuestionIndex++;
   if (currentQuestionIndex < questions.length) {
@@ -73,6 +81,7 @@ const handleNextButton = () => {
   }
 };
 
+// Add event listeners for next button and answer buttons
 nextButton.addEventListener("click", () => {
   if (currentQuestionIndex < questions.length) {
     handleNextButton();
@@ -81,4 +90,5 @@ nextButton.addEventListener("click", () => {
   }
 });
 
+// Start quiz
 startQuiz();
