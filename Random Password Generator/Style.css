@@ -1,63 +1,94 @@
+/* Reset CSS styles and set default font family and box-sizing */
 * {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
-body{
-    background: #002339;
-    color: #fff;
+
+/* Set background color and text color for the body element */
+body {
+  background: #002339;
+  color: #fff;
 }
-.container{
-    margin: 12%;
-    width: 90%;
-    max-width: 700px;
+
+/* Styles for the container element */
+.container {
+  /* Add margin and set width to 90% with a max-width of 700px */
+  margin: 12%;
+  width: 90%;
+  max-width: 700px;
 }
-.display{
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    background: #fff;
-    color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 26px 20px;
-    border-radius: 5px;
+
+/* Styles for the display element */
+.display {
+  /* Set width to 100% and add margin top and bottom */
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  /* Set background color, text color, and display properties */
+  background: #fff;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Add padding and border radius */
+  padding: 26px 20px;
+  border-radius: 5px;
 }
-.container h1{
-    font-weight: 500;
-    font-size: 45px;
+
+/* Styles for h1 elements inside the container */
+.container h1 {
+  /* Set font weight and size */
+  font-weight: 500;
+  font-size: 45px;
 }
-.container h1 span{
-    color: #019f55;
-    border-bottom: 4px solid #019f55;
-    padding-bottom: 7px;
+
+/* Styles for span elements inside h1 elements inside the container */
+.container h1 span {
+  /* Set color, border bottom, and padding bottom */
+  color: #019f55;
+  border-bottom: 4px solid #019f55;
+  padding-bottom: 7px;
 }
-.display img{
-    width: 30px;
-    cursor: pointer;
+
+/* Styles for img elements inside the display element */
+.display img {
+  /* Set width and cursor */
+  width: 30px;
+  cursor: pointer;
 }
-.display input{
-    border: 0;
-    outline: 0;
-    font-size: 24px;
+
+/* Styles for input elements inside the display element */
+.display input {
+  /* Remove border and outline, and set font size */
+  border: 0;
+  outline: 0;
+  font-size: 24px;
 }
-.container button img{
-    width: 28px;
-    margin-right: 10px;
+
+/* Styles for img elements inside button elements inside the container */
+.container button img {
+  /* Set width and margin right */
+  width: 28px;
+  margin-right: 10px;
 }
-.container button{
-    border: 0;
-    outline: 0;
-    background: #019f55;
-    color: #fff;
-    font-size: 22px;
-    font-weight: 300;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px 26px;
-    border-radius: 5px;
-    cursor: pointer;
+
+/* Styles for button elements inside the container */
+.container button {
+  /* Remove border and outline, and set background color, text color, and font properties */
+  border: 0;
+  outline: 0;
+  background: #019f55;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  /* Set display properties and padding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 26px;
+  /* Add border radius and cursor */
+  border-radius: 5px;
+  cursor: pointer;
 }
