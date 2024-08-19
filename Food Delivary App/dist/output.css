@@ -600,12 +600,12 @@ video {
   left: 0px;
 }
 
-.top-0{
-  top: 0px;
-}
-
 .right-4{
   right: 1rem;
+}
+
+.top-0{
+  top: 0px;
 }
 
 .top-\[0\.7rem\]{
@@ -724,4 +724,39 @@ video {
 .hover\:text-secondaryColor:hover{
   --tw-text-opacity: 1;
   color: rgb(255 204 0 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .md\:static{
+    position: static;
+  }
+
+  .md\:ml-auto{
+    margin-left: auto;
+  }
+
+  .md\:block{
+    display: block;
+  }
+
+  .md\:hidden{
+    display: none;
+  }
+
+  .md\:w-auto{
+    width: auto;
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:border-none{
+    border-style: none;
+  }
+
+  .md\:py-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
