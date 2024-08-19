@@ -19,6 +19,14 @@ navLinks.forEach((link) => {
 });
 
 /*~~~~~~~~~~~~~~~ TABS ~~~~~~~~~~~~~~~*/
+const tabs = document.querySelectorAll(".tabs_wrap ul li");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    tabs.forEach((t) => t.classList.remove("active"));
+    tab.classList.add("active");
+  });
+});
 
 /*~~~~~~~~~~~~~~~ DARK LIGHT THEME ~~~~~~~~~~~~~~~*/
 

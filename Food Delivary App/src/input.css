@@ -41,3 +41,8 @@
     @apply text-3xl;
   }
 }
+
+.tabs_wrap ul li:hover,
+.tabs_wrap ul li.active {
+  @apply bg-secondaryColor text-blackColor;
+}
