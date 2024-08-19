@@ -9,14 +9,14 @@ hamburger.addEventListener("click", () => {
 });
 
 closeIcon.addEventListener("click", () => {
-    navMenu.classList.add("hidden");
-})
+  navMenu.classList.add("hidden");
+});
 
-navLinks.forEach(link => {
-    link.addEventListener("click", () => {
-        navMenu.classList.add("hidden");
-        })
-})
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navMenu.classList.add("hidden");
+  });
+});
 
 /*~~~~~~~~~~~~~~~ TABS ~~~~~~~~~~~~~~~*/
 

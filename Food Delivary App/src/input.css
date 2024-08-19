@@ -23,8 +23,11 @@
 }
 
 @layer utilities {
-  .home_title {
+  .home_title, .card_title {
     @apply text-4xl font-oswald font-bold uppercase lg:text-6xl text-whiteColor;
+  }
+  .card_title {
+    @apply text-xl;
   }
   .separator {
     @apply w-28 h-[2px] bg-secondaryColor my-5;
