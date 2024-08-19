@@ -23,7 +23,9 @@
 }
 
 @layer utilities {
-  .home_title, .card_title {
+  .home_title,
+  .card_title,
+  .section_title {
     @apply text-4xl font-oswald font-bold uppercase lg:text-6xl text-whiteColor;
   }
   .card_title {
@@ -34,5 +36,8 @@
   }
   .paragraph {
     @apply text-paragraphColor text-xs leading-5;
+  }
+  .section_title {
+    @apply text-3xl;
   }
 }
